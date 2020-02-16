@@ -2,13 +2,74 @@
     <html>
            
         <head>
-            <link rel= "stylesheet" href="masterCss.css">
+            <style>
+                .nav{
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 10;
+                    width: 25%;
+                    background-color: #f1f1f1;
+                    height: 100%; /* Full height */
+                    position: fixed; /* Make it stick, even on scroll */
+                    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+                }
+                #example-container {
+                    display:inline-block;
+                    text-align: left;
+                    height: auto;
+                    width: auto;
+                    padding: 20px;
+                    scroll-margin-inline-start:inherit;
+                    border-radius: 2px;
+                    background:purple;
+                    position: relative;
+                    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+                }
+
+                div{
+                    text-align: center;
+                    margin-top: 100px;
+                    margin-bottom: 0px;
+                    margin-right: 150px;
+                    margin-left: 400px;
+                }
+                p{
+
+                    margin-top: 20px;
+                    margin-bottom: 100px;
+                    margin-right: 150px;
+                    margin-left: 400px;
+                }
+                .info{
+                    text-align: center;
+                }
+            
+            </style>
         </head>
         <body>
             <h1>HTML Review</h1>
-            <h2>Welcome to HTML Review</h2>
             <nav>
                 <ul class ="nav">
+                    <li><a href="#des">Descriptions</a></li>
+                        <ol>
+                            <li><a href="#XML">XML</a></li>
+                            <li><a href="#DTD">DTD</a></li>
+                            <li><a href="#XSLT"> XSLT</a></li>
+                            <li><a href="#HTML"> HTML</a></li>
+                            <li><a href="#CSS">CSS</a></li>
+                            <li><a href="#WebFv" >Web Forms</a></li>
+                            <li><a href="#JavaScript"> JavaScript</a></li>
+                            <li><a href="#DOM" >DOM</a></li>
+                            <li><a href="#DHTML"> DHTML</a></li>
+                            <li><a href="#PHP"> PHP</a></li>
+                            <li><a href="#ASP" >ASP </a></li>
+                            <li><a href="#JSP" >JSP</a></li>
+                            <li><a href="#NodeJS"> NodeJS</a></li>
+                            <li><a href="#Bootstrap"> Bootstrap </a></li>
+                            <li><a href="#MySQL" >MySQL</a></li>
+                        </ol>
+                    </li>
+                    <br>
                     <li><a href="#welcome">Home</a></li>
                     <li><a href="#skel">Skeletal Tags</a></li>
                     <li><a href="#text">Text Tags</a></li>
@@ -17,20 +78,39 @@
                     <li><a href="#links">Links and Media Tags</a></li>
                     <li><a href="#table">Tables</a></li>
                     <li><a href="#other">Other Tags</a></li>
-                  </ul>
+                </ul>
             </nav>
             <div id = "welcome">HTML Review</div>
-            <p>
-                Welcome to Our Presentation
-            </p>
+            <a name="skel"></a> 
             <div id = "skel">Skeletal Tags</div>
             <p> Skeletal Tags are tags that make the the structure of the HTML file.
                 They are most important part because without them 
             </p>
-            <ul class = "info">
-                <li>html tag:</li>
-            </ul>
+            <div class = "info"> HTML Tag:</div>
             
+            <a name="des"></a> 
+            <div id = "des"> Descriptions</div>
+            
+            <div id="XML">XML (Extensible Markup Language) does not specifically and actively do anything but is a method of simplification. A few examples of the simplifications XML can achieve is data sharing, data transport, data availability and changing platform. XML can be available in many kinds of reading machines (news feeds, voice machines, etc) and will store the data in plain text format.</div>
+            <p id = "example-container">
+                &lt;note&gt;<br />
+                &nbsp;&nbsp;&nbsp;&lt;date&gt; 2015-09-01&lt;/date&gt;<br />
+                &nbsp;&nbsp;&lt;body&gt; Don't to Take out the trash!&lt;/body&gt;<br />
+                &lt;/note&gt;
+            </p>
+            <p id="DTD"> DTD (Document Type Definition) is the structure and legal elemts/attributes of an XML document. DTD can only be declared within a XML file and wrapped within the !DOCTYPE tag definition. </p>
+            <p id= "example-container">
+                &lt;!DOCTYPE note &#91;<br />
+                &lt;!ELEMENT note &#40;to,from,heading,body&#41;&gt;<br />
+                &lt;!ELEMENT to &#40;#PCDATA&#41;&gt;<br />
+                &#93;&gt;
+
+            </p>
+
+
+
+
+
             <div id = "text">Text Tags</div>
             <div id = "lists">Lists</div>
             <div id = "struc">Structural Elements</div>
