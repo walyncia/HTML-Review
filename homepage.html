@@ -21,12 +21,9 @@
                   </ul>
             </nav>
             <div >HTML Review</div>
-            <p>
-                Welcome to Our Presentation
-            </p>
             <div id = "skel">Skeletal Tags</div>
             <p> Skeletal Tags are tags that make the the structure of the HTML file.
-                They are most important part because without them 
+                They are most important part because without them there would be no HTML Document.
             </p>
             <table class = "info">
                 <tr>
@@ -75,7 +72,7 @@
             
             <div id = "text">Text Tags</div>
             <p>
-
+                
             </p>
             <table class = "info">
                 <tr>
@@ -85,28 +82,44 @@
                 </tr>
                 <tr>
                   <td>&lt;p&gt;</td>
-                  <td>The html tag is what makes a HTML Document. It is the basis of the document itself.</td>
-                  <td>&lt;html&gt;<br>
-            
-                    &lt;/html&gt;
+                  <td>The p tag stands for paragraph. It s a text tag that allows you write in paragraphs for your HTML document.</td>
+                  <td>&lt;p&gt;<br>
+                    This is a start of a really good paragraph.
+                    &lt;p&gt;
 
                   </td>
                 </tr>
                 <tr>
-                  <td>&lt;head&gt;</td>
-                  <td>The head tag is a tag defining a specific area. The top of the page, it contains like links to CSS files and the title.</td>
+                  <td>&lt;h1&gt; through &lt;h6&gt;</td>
+                  <td>
+                      The Tags h1 through h6 are all headers. the headers are defined by importance 
+                      h1 being the most important and h6 being the least important. They are found in the body tag.
+                  </td>
                   <td>&lt;html&gt;<br>
-                    &lt;head&gt;<br>
-                    &lt;title&gt;Hello World!&lt;title&gt;<br>
-                    &lt;/head&gt;
+                    &lt;h1&gt; This is a heading&lt;/h1&gt;<br>
+                    &lt;h2&gt; This is a heading &lt;/h2&gt;<br>
+                    &lt;h3&gt; This is a heading&lt;/h3&gt;<br>
+                    &lt;h4&gt; This is a heading&lt;/h4&gt;<br>
+                    &lt;h5&gt; This is a heading&lt;/h5&gt;<br>
+                    &lt;h6&gt; This is a heading&lt;/h6&gt;<br>
                 
                     &lt;/html&gt;</td>
                 </tr>
                 <tr>
-                  <td>&lt;title&gt;</td>
-                  <td>Roland Mendel</td>
-                  <td >Austria</td>
+                  <td>&lt;blockquote&gt;</td>
+                  <td>The blockquote tag is used to site information from other sources. They are ususally automatically indented by browswers.</td>
+                  <td ><blockquote cite="https://www.w3schools.com/tags/tag_blockquote.asp">&lt;blockquote cite ="https://www.w3schools.com/tags/tag_blockquote.asp"&gt; The &lt;blockquote&gt; tag specifies a section that is quoted from another source.&lt;/blockquote&gt;</blockquote></td>
                 </tr>
+                <tr>
+                    <td>&lt;address&gt;</td>
+                    <td>The address tag is used to define the contact inforamtion of the author/owner of the document. It is used either in a &lt;body&gt; tag or an &lt;article&gt; tag. Either way it represents the contact information for the document or the article.</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;pre&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
               </table>
             <div id = "lists">Lists</div>
             <p></p>
@@ -117,7 +130,7 @@
                   <th>Example</th>
                 </tr>
                 <tr>
-                  <td>&lt;html&gt;</td>
+                  <td>&lt;ol&gt;</td>
                   <td>The html tag is what makes a HTML Document. It is the basis of the document itself.</td>
                   <td>&lt;html&gt;<br>
             
@@ -126,7 +139,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>&lt;head&gt;</td>
+                  <td>&lt;ul&gt;</td>
                   <td>The head tag is a tag defining a specific area. The top of the page, it contains like links to CSS files and the title.</td>
                   <td>&lt;html&gt;<br>
                     &lt;head&gt;<br>
@@ -136,10 +149,25 @@
                     &lt;/html&gt;</td>
                 </tr>
                 <tr>
-                  <td>&lt;title&gt;</td>
+                  <td>&lt;li&gt;</td>
                   <td>Roland Mendel</td>
                   <td >Austria</td>
                 </tr>
+                <tr>
+                    <td>&lt;dl&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;dt&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;dd&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
               </table>
             <div id = "struc">Structural Elements</div>
             <p></p>
@@ -150,7 +178,7 @@
                   <th>Example</th>
                 </tr>
                 <tr>
-                  <td>&lt;html&gt;</td>
+                  <td>&lt;header&gt;</td>
                   <td>The html tag is what makes a HTML Document. It is the basis of the document itself.</td>
                   <td>&lt;html&gt;<br>
             
@@ -159,7 +187,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>&lt;head&gt;</td>
+                  <td>&lt;footer&gt;</td>
                   <td>The head tag is a tag defining a specific area. The top of the page, it contains like links to CSS files and the title.</td>
                   <td>&lt;html&gt;<br>
                     &lt;head&gt;<br>
@@ -169,10 +197,15 @@
                     &lt;/html&gt;</td>
                 </tr>
                 <tr>
-                  <td>&lt;title&gt;</td>
+                  <td>&lt;nav&gt;</td>
                   <td>Roland Mendel</td>
                   <td >Austria</td>
                 </tr>
+                <tr>
+                    <td>&lt;Section&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
               </table>
             <div id = "links">Links and Media Tags</div>
             <p></p>
@@ -183,7 +216,7 @@
                   <th>Example</th>
                 </tr>
                 <tr>
-                  <td>&lt;html&gt;</td>
+                  <td>&lt;a&gt;</td>
                   <td>The html tag is what makes a HTML Document. It is the basis of the document itself.</td>
                   <td>&lt;html&gt;<br>
             
@@ -192,7 +225,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>&lt;head&gt;</td>
+                  <td>&lt;link&gt;</td>
                   <td>The head tag is a tag defining a specific area. The top of the page, it contains like links to CSS files and the title.</td>
                   <td>&lt;html&gt;<br>
                     &lt;head&gt;<br>
@@ -202,10 +235,45 @@
                     &lt;/html&gt;</td>
                 </tr>
                 <tr>
-                  <td>&lt;title&gt;</td>
+                  <td>&lt;img&gt;</td>
                   <td>Roland Mendel</td>
                   <td >Austria</td>
                 </tr>
+                <tr>
+                    <td>&lt;figure&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;figcaption&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;video&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;audio&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;object&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;param&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;embed&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
               </table>
             <div id = "table">Tables</div>
             <p></p>
@@ -216,7 +284,7 @@
                   <th>Example</th>
                 </tr>
                 <tr>
-                  <td>&lt;html&gt;</td>
+                  <td>&lt;table&gt;</td>
                   <td>The html tag is what makes a HTML Document. It is the basis of the document itself.</td>
                   <td>&lt;html&gt;<br>
             
@@ -225,7 +293,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>&lt;head&gt;</td>
+                  <td>&lt;tr&gt;</td>
                   <td>The head tag is a tag defining a specific area. The top of the page, it contains like links to CSS files and the title.</td>
                   <td>&lt;html&gt;<br>
                     &lt;head&gt;<br>
@@ -235,10 +303,45 @@
                     &lt;/html&gt;</td>
                 </tr>
                 <tr>
-                  <td>&lt;title&gt;</td>
+                  <td>&lt;th&gt;</td>
                   <td>Roland Mendel</td>
                   <td >Austria</td>
                 </tr>
+                <tr>
+                    <td>&lt;td&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;caption&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;thead&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;tbody&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;colgroup&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;col&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;tfoot&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
               </table>
             <div id = "other">Other Tags</div>
             <p></p>
@@ -249,7 +352,7 @@
                   <th>Example</th>
                 </tr>
                 <tr>
-                  <td>&lt;html&gt;</td>
+                  <td>&lt;style&gt;</td>
                   <td>The html tag is what makes a HTML Document. It is the basis of the document itself.</td>
                   <td>&lt;html&gt;<br>
             
@@ -258,7 +361,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>&lt;head&gt;</td>
+                  <td>&lt;script&gt;</td>
                   <td>The head tag is a tag defining a specific area. The top of the page, it contains like links to CSS files and the title.</td>
                   <td>&lt;html&gt;<br>
                     &lt;head&gt;<br>
@@ -268,11 +371,20 @@
                     &lt;/html&gt;</td>
                 </tr>
                 <tr>
-                  <td>&lt;title&gt;</td>
+                  <td>&lt;canvas&gt;</td>
                   <td>Roland Mendel</td>
                   <td >Austria</td>
                 </tr>
+                <tr>
+                    <td>&lt;svg&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
               </table>
+              <footer>
+                  <p>Resources</p>
+                  <p>w3schools: <a href = "https://www.w3schools.com/html/default.asp"></a> Here.</p>
+              </footer>
 
 
 
