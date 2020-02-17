@@ -20,10 +20,33 @@ div{
 }
 p{
     margin-top: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     margin-right: 150px;
     margin-left: 400px;
 }
 .info{
     text-align: center;
 }
+h3{
+    text-align: right;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    margin-left: 400px;
+    margin-top: 80px;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;}
+
+    .expl{
+        border-spacing: 200px;
+    }
