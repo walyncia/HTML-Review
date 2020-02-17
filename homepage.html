@@ -2,7 +2,62 @@
     <html>
            
         <head>
-            <link rel= "stylesheet" href="masterCss.css">
+            <title>HTML Review</title>
+            <style> 
+            .nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    width: 25%;
+    background-color: #f1f1f1;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+  
+}
+div,p{
+    text-align: center;
+}
+div{
+    margin-top: 100px;
+    margin-bottom: 0px;
+    margin-right: 150px;
+    margin-left: 400px;
+}
+p{
+    margin-top: 20px;
+    margin-bottom: 80px;
+    margin-right: 150px;
+    margin-left: 400px;
+}
+.info{
+    text-align: center;
+}
+h3{
+    text-align: right;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin-left: 300px;
+    margin-top: 80px;
+    
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;}
+
+    .expl{
+        border-spacing: 200px;
+    }
+            </style>
         </head>
         <body>
             <h1 id = "welcome">HTML Review</h1>
@@ -18,6 +73,7 @@
                     <li><a href="#links">Links and Media Tags</a></li>
                     <li><a href="#table">Tables</a></li>
                     <li><a href="#other">Other Tags</a></li>
+                    <li><a href="#rsource">Resources</a></li>
                   </ul>
             </nav>
             <div >HTML Review</div>
@@ -72,7 +128,7 @@
             
             <div id = "text">Text Tags</div>
             <p>
-                
+                Text tag is a tag that handles the textual information for a HTML Document. It allows for easy organization on the text. 
             </p>
             <table class = "info">
                 <tr>
@@ -381,9 +437,9 @@
                     <td >Austria</td>
                   </tr>
               </table>
-              <footer>
-                  <p>Resources</p>
-                  <p>w3schools: <a href = "https://www.w3schools.com/html/default.asp"></a> Here.</p>
+              <footer id = "rsource">
+                  <div>Resources</div>
+                  <div>w3schools: <a href = "https://www.w3schools.com/html/default.asp"> Here.</a></div>
               </footer>
 
 
