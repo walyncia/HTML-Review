@@ -2,14 +2,104 @@
     <html>
            
         <head>
-            <link rel= "stylesheet" href="masterCss.css">
+          <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+          <style>
+                .nav{
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 10;
+                    width: 25%;
+                    background-color: #636363;
+                    height: 100%; /* Full height */
+                    position: fixed; /* Make it stick, even on scroll */
+                    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+                    display:inline-block;
+                    text-align: left;
+                    height: auto;
+                    width: auto;
+                    scroll-margin-inline-start:inherit;
+                    border-radius: 10px;
+  
+                    
+                    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+                }
+                a:link, a:active {color:rgb(0, 209, 174); text-decoration:none;}
+                a:hover, a:visited {color:rgb(0, 148, 136);text-decoration:none; font-weight:bolder;}
+
+                #example-container {
+                    display:inline-block;
+                    text-align: left;
+                    height: auto;
+                    width: auto;
+                    padding: 20px;
+                    scroll-margin-inline-start:inherit;
+                    border-radius: 2px;
+                    background:rgb(109, 173, 149);
+                    position: relative ;
+                    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+                }
+
+                div{
+                    text-align: center;
+                    margin-top: 100px;
+                    margin-bottom: 0px;
+                    margin-right: 150px;
+                    margin-left: 400px;
+                }
+                p{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-right: 150px;
+                margin-left: 210px;
+                font-family: 'Open Sans', sans-serif;
+                }
+                .info{
+                  text-align: center;
+                }
+            
+                h3{
+                  text-align: right;
+                  font-family: 'Open Sans', sans-serif;
+                }
+                h1{ 
+                  font-family: 'Open Sans', sans-serif;
+                  font-size: large;
+                  text-align: center;
+                }
+                table {
+                  font-family: 'Open Sans', sans-serif;
+                  border-collapse: collapse;
+                  width: 70%;
+                  margin-top: 20px;
+                  margin-bottom: 100px;
+                  margin-right: 150px;
+                  margin-left: 400px;
+                  float:right;
+                    
+                }
+                
+                td, th {
+                    border: 1px solid #dddddd;
+                    text-align: left;
+                    padding: 8px;
+                    font-family: 'Open Sans', sans-serif;
+                }
+                
+                tr:nth-child(even) {
+                  font-family: 'Open Sans', sans-serif;
+                  background-color: #dddddd;}
+                  .expl{
+                    border-spacing: 200px;
+                  }
+            
+            </style>
         </head>
         <body>
-            <h1 id = "welcome">HTML Review</h1>
-            <h2>Welcome to HTML Review</h2>
-            <h3>Trinity Dean</h3>
+          <a name="backtoTop"></a> 
+            <h1>HTML Review</h1>
             <nav>
                 <ul class ="nav">
+                  <br />
                     <li><a href="#welcome">Home</a></li>
                     <li><a href="#skel">Skeletal Tags</a></li>
                     <li><a href="#text">Text Tags</a></li>
@@ -18,9 +108,44 @@
                     <li><a href="#links">Links and Media Tags</a></li>
                     <li><a href="#table">Tables</a></li>
                     <li><a href="#other">Other Tags</a></li>
-                  </ul>
-            </nav>
-            <div >HTML Review</div>
+                    <li><a href="#backtoTop">Back to Top</a></li>
+                    <li><a href="#des">Descriptions</a>
+                      <ul >
+                          <li><a href="#XML">XML</a></li>
+                          <li><a href="#DTD">DTD</a></li>
+                          <li><a href="#XSLT"> XSLT</a></li>
+                          <li><a href="#HTML"> HTML</a></li>
+                          <li><a href="#CSS">CSS</a></li>
+                          <li><a href="#WebF" >Web Forms</a></li>
+                          <li><a href="#JScript"> JavaScript</a></li>
+                          <li><a href="#DOM" >DOM</a></li>
+                          <li><a href="#DHTML"> DHTML</a></li>
+                          <li><a href="#PHP"> PHP</a></li>
+                          <li><a href="#ASP" >ASP </a></li>
+                          <li><a href="#JSP" >JSP</a></li>
+                          <li><a href="#NodeJS"> NodeJS</a></li>
+                          <li><a href="#Bootstrap"> Bootstrap </a></li>
+                          <li><a href="#MySQL" >MySQL</a></li>
+                          <li><a href="#HTTP"> HTTP</a></li>
+                          <li><a href="#UDP"> UDP </a></li>
+                          <li><a href="#TCP" >TCP</a></li>
+                          <li><a href="#URL" >URL</a></li>
+                          <li><a href="#URN"> URN</a></li>
+                          <li><a href="#IP"> IP </a></li>
+                          <li><a href="#IPAddress" >IP Address</a></li>
+                          <li><a href="#FQDN"> FQDN</a></li>
+                          <li><a href="#ARPANET"> ARPANET </a></li>
+                          <li><a href="#WebS" >Web Server</a></li>
+
+                          <li><a href="#Port" >Port</a></li>
+                          <li><a href="#WebH" >Web-Hosting</a></li>
+                          <li><a href="#FTP"> FTP</a></li>
+                          <li><a href="#SFTP"> SFTP </a></li>
+                          <li><a href="#IPAddress" >IP Address</a></li>
+                      </ul>
+                  </li>
+                </ul>
+              </nav>
             <div id = "skel">Skeletal Tags</div>
             <p> Skeletal Tags are tags that make the the structure of the HTML file.
                 They are most important part because without them there would be no HTML Document.
@@ -380,15 +505,102 @@
                     <td>Roland Mendel</td>
                     <td >Austria</td>
                   </tr>
-              </table>
-              <footer>
-                  <p>Resources</p>
-                  <p>w3schools: <a href = "https://www.w3schools.com/html/default.asp"></a> Here.</p>
-              </footer>
+            </table>
 
-
-
-        </body>
+            
+            <a name="des"></a> 
+            <div id = "des"> Descriptions</div>
+            
+            <p id="XML"><b>XML</b> (Extensible Markup Language) does not specifically and actively do anything but is a method of simplification. A few examples of the simplifications XML can achieve is data sharing, data transport, data availability and changing platform. XML can be available in many kinds of reading machines (news feeds, voice machines, etc) and will store the data in plain text format.</p>
+            <p id= "example-container">
+              &lt;note&gt;<br />
+              &nbsp;&nbsp;&nbsp;&lt;date&gt; 2015-09-01&lt;/date&gt;<br />
+              &nbsp;&nbsp;&nbsp;&lt;body&gt; Don't to Take out the trash!&lt;/body&gt;<br />
+              &lt;/note&gt;
+            </p>
+            <p id="DTD"> <b>DTD</b> (Document Type Definition) is the structure and legal elemts/attributes of an XML document. DTD can only be declared within a XML file and wrapped within the !DOCTYPE tag definition. </p>
+            <p id= "example-container"> 
+              &lt;!DOCTYPE note &#91;<br />
+              &lt;!ELEMENT note &#40;to,from,heading,body&#41;&gt;<br />
+              &lt;!ELEMENT to &#40;#PCDATA&#41;&gt;<br />
+              &#93;&gt;
+            </p>
+            <p id= "XSLT"><b> XSLT </b>(Extensible Markup Language Transformations) is a language created for the purpose of transforming XML documents into other XML documents.</p>
+            <p id= "example-container">
+              &lt;tr &gt;<br />
+              &lt;td &gt; &lt;xsl:value-of select="title"/ &gt;&lt;/td&gt;<br />
+              &lt;td &gt; &lt;xsl:value-of select="artist"/ &gt;&lt;/td&gt;<br />
+              &lt;/tr &gt;
+            </p>
+            <p id="HTML"><b>HTML</b>(HyperText Markup Language) is the most common standard markup language for Web pages. This allows any person to create their own websites with the most common tags “&lt; b&gt;, &lt; p&gt;, &lt;body&gt; &lt; i&gt;,etc”.</p>
+            <p id="example-container">
+              &lt;body&gt;<br />
+              &nbsp;&nbsp;&nbsp;&lt;h1&gt;This is a Heading&lt;/h1&gt;<br />
+              &nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph. &lt;/p&gt;<br />
+              &lt;/body&gt;<br />
+            </p>
+            <p id="CSS"><b>CSS</b>(Cascading Style Sheets) which is used for the descriptions and “style” for HTML files. The CSS influences the HTML elements display on the screen and have the capability to be stored in CSS files or HTML files as a &lt;style&gt; tag.</p>
+            <p id="example-container">
+              &lt;style&gt;<br />
+              p.center {<br />
+              &nbsp;text-align: center;<br />
+              &nbsp;color: red;<br />
+              }<br />
+              &lt;/style&gt;
+            </p>
+            <p id="WebF"><b>Web Forms</b>are pages that your users request using their browser and can be written using a combination of HTML, server code, client-script and server controls. Many IDE’s give permission for users to drag and drop server controls onto the platform of Web Form pages. </p>
+            <br />
+            <p id="JScript"><b>JavaScript</b>(JS) is one of many interpreted programming languages created for the purpose of software development. It conforms to the ECMAScript specifications and is classified as a high-leveled language with a compiler process instead of interpreter.</p>
+            <p id ="example-container">
+              &lt;script&gt;<br />
+              &nbsp;&nbsp;var x = 5;<br />
+                &lt;script&gt;               
+            </p>
+            <p id="DOM"><b>DOM</b>(Document Object Model) has the responsibility of connecting web pages to scripts or programming languages by representing a certain structure. The DOM usually takes the form of representing a document with “logical trees” with each branch ending in a node (object).</p>
+            <p id="example-container">
+              &lt;script type="text/javascript"&gt;<br />
+              &nbsp;&nbsp;var text = document.getElementById("one").innerHTML;<br />
+              &nbsp;&nbsp;alert("The first heading is " + text);<br />
+              &lt;/script&gt;<br /> 
+            </p>
+            <p id="DHTML"><b>DHTML</b>(Dynamic HyperText Markup Language) is a collection of multiple web-supporting technologies that create animated websites. There are many components that are factor ined into this static markup language: HTML, JavaScript, CSS, DOM,etc). </p>
+            <br />
+            <p id="PHP"><b>PHP</b>(Hypertext Preprocessor) is a general purposed scripting tool. This preprocessor is mainly used in aspects of web development and html embedding.</p>
+            <p id="example-container">
+              &lt;?php
+              &nbsp;&nbsp;echo "Hi, I'm a PHP script!";
+              ?&gt;
+            </p>
+            <p id="ASP"><b>ASP</b>(application service provider) is a business providing computer-based services to customers over a network; such as access to a particular software application (such as customer relationship management) using a standard protocol (HTTP).</p>
+            <br />
+            <p id="JSP"><b>JSP</b>(Java Server Pages) is technology that is able to provide a simplified way to create dynamic web content at a quick pass. And is responsible as a server-side technology for developing dynamic web pages. This is mainly used for implementing presentation layers of software development specifically HTML.</p>
+            <p id="example-container">
+              &lt;% num1 = num1+num2 %&gt;
+            </p>
+            <p id="NodeJS"><b>Node.JS</b>is an open-source, cross-platform, on the basis of a JavaScript runtime environment. It executes JavaScript code outside of a browser and correspond it with the works of the user.</p>
+            <p id="example-container">
+              var http = require('http');<br />
+              http.createServer(function (req, res) {<br />
+              res.writeHead(200, {'Content-Type': 'text/plain'});<br />
+              res.end('Hello World!');<br />
+              }).listen(8080);
+            </p>
+            <p id="Bootstrap"><b>Bootstrap</b>is an a custom-made open source toolkit for that is compatible with the formats of HTML, CSS, and JS. Any work can be responsive to the bootstrap grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
+            <p id="example-container">
+              &lt;p class=”text-warning”&gt;.text-warning&lt;/p&gt;
+            </p>
+            <p id="MySQL"><b>MySQL</b> is a featured RDBMS being used for developing various web-based software applications. MySQL is one of the best and has developed, marketed and supported by MySQL AB, which is a Swedish company. </p>
+            <p id="example-container">
+              hello&gt; mysql your-database-name
+            </p>
+            <p id="HTTP"><b>HTTP</b>(Hypertext Transfer Protocol) is a protocol structured by layer that is responsible for transmitting hypermedia documents, such as HTML. Hypertext Transfer Protocol Secure (HTTPS) is the first extension of the Hypertext Transfer Protocol (HTTP).and is used for secure communication over a network of a computer.</p>
+            <br />
+            <p id="UDP"><b>UDP</b>(User Datagram Protocol) is an alternative communications protocol to Transmission Control Protocol (TCP) used primarily for establishing low-latency and less tolerating connections between applications on the internet. However, UDP is highly unreliable and connectionless protocol.</p>
+          
+          
+          
+          
+          </body>
 
 
 
