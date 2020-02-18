@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+    <html>
+           
+        <head>
+          <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+          <meta name='viewport' content='width=device-width, initial-scale=1'>   
+
+          <style>
+                .nav{
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 10px;
+                    width: 25%;
+                    background-color: #636363;
+                    height: auto; /* Full height */
+                    position:fixed; /* Make it stick, even on scroll */
+                    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+                    display:inline-block;
+                    text-align: left;
+                    height: auto;
+                    width: auto;
+                    scroll-margin-inline-start:inherit;
+                    border-radius: 10px;
+                    font-size: 15px;
+                    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);}
+
+
+                a:link, a:active {color:rgb(0, 209, 174); text-decoration:none;}
+                a:hover, a:visited {color:rgb(0, 148, 136);text-decoration:none; font-weight:bolder;}
+
+                #example-container {
+                    text-align: left;
+                    height: auto;
+                    width: auto;
+                    padding: 20px;
+                    scroll-margin-inline-start:inherit;
+                    border-radius: 2px;
+                    background:rgb(109, 173, 149);
+                    position:sticky ;
+                    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+                }
+
+                div, h1{
+                    text-align: center;
+                    margin-top: 100px;
+                    margin-bottom: 0px;
+                    margin-right: 150px;
+                    margin-left: 400px;
+                }
+
+                p, h1{
+                  margin-top: 20px;
+                  margin-bottom: 20px;
+                  margin-right: 150px;
+                  margin-left: 210px;
+                  font-family: 'Open Sans', sans-serif;
+                }
+                .info{
+                  text-align: center;
+                }
+                ol .li{
+                  list-style-type: none;
+                  margin: 0;
+                  padding: 10px;
+                  width: 25%;
+                  background-color: #636363;
+                  height: auto; /* Full height */
+                  position:fixed; /* Make it stick, even on scroll */
+                  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+                  display:inline-block;
+                  height: auto;
+                  width: auto;
+                  scroll-margin-inline-start:inherit;
+                  border-radius: 10px;
+                  font-size: 15px;
+                  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+                  text-align:right;
+                  position: fixed;
+                }
+
+                h3{
+                  text-align: right;
+                  font-family: 'Open Sans', sans-serif;
+                }
+                h1{ 
+                  font-size: 50px;
+                }
+                table {
+                  font-family: 'Open Sans', sans-serif;
+                  border-collapse: collapse;
+                  width: 70%;
+                  margin-top: 20px;
+                  margin-bottom: 100px;
+                  margin-right: 150px;
+                  margin-left: 400px;
+                  float:right;
+                    
+                }
+                
+                td, th {
+                    border: 1px solid #dddddd;
+                    text-align: left;
+                    padding: 8px;
+                    font-family: 'Open Sans', sans-serif;
+                }
+                
+                tr:nth-child(even) {
+                  font-family: 'Open Sans', sans-serif;
+                  background-color: #dddddd;}
+                  .expl{
+                    border-spacing: 200px;
+                  }
+            
+            </style>
+        </head>
+        <body>
+          <a name="backtoTop"></a> 
+              <nav>
+                  <ul class ="nav">
+                      <li><a href="#welcome">Home</a></li>
+                      <li><a href="#skel">Skeletal Tags</a></li>
+                      <li><a href="#text">Text Tags</a></li>
+                      <li><a href="#lists">Lists</a></li>
+                      <li><a href="#struc">Structural Elements</a></li>
+                      <li><a href="#links">Links and Media Tags</a></li>
+                      <li><a href="#table">Tables</a></li>
+                      <li><a href="#other">Other Tags</a></li>
+                      <li><a href="#des">Descriptions</a>
+                        <ul >
+                            <li><a href="#XML">XML</a></li>
+                            <li><a href="#DTD">DTD</a></li>
+                            <li><a href="#XSLT"> XSLT</a></li>
+                            <li><a href="#HTML"> HTML</a></li>
+                            <li><a href="#CSS">CSS</a></li>
+                            <li><a href="#WebF" >Web Forms</a></li>
+                            <li><a href="#JScript"> JavaScript</a></li>
+                            <li><a href="#DOM" >DOM</a></li>
+                            <li><a href="#DHTML"> DHTML</a></li>
+                            <li><a href="#PHP"> PHP</a></li>
+                            <li><a href="#ASP" >ASP </a></li>
+                            <li><a href="#JSP" >JSP</a></li>
+                            <li><a href="#NodeJS"> NodeJS</a></li>
+                            <li><a href="#Bootstrap"> Bootstrap </a></li>
+                            <li><a href="#MySQL" >MySQL</a></li>
+                            <li><a href="#HTTP"> HTTP</a></li>
+                            <li><a href="#UDP"> UDP </a></li>
+                            <li><a href="#TCP" >TCP</a></li>
+                            <li><a href="#URL" >URL</a></li>
+                            <li><a href="#URN"> URN</a></li>
+                            <li><a href="#IP"> IP </a></li>
+                            <li><a href="#IPAddress" >IP Address</a></li>
+                            <li><a href="#FQDN"> FQDN</a></li>
+                            <li><a href="#ARPANET"> ARPANET </a></li>
+                            <li><a href="#WebS" >Web Server</a></li>
+                            <li><a href="#Port" >Port</a></li>
+                            <li><a href="#WebH" >Web-Hosting</a></li>
+                            <li><a href="#FTP"> FTP</a></li>
+                            <li><a href="#SFTP"> SFTP </a></li>
+                            <li><a href="#SSH" >SSH</a></li>
+                            <li><a href="#API" >aAPI</a></li>
+                            <li><a href="#RESTAPI" >RESTful API</a></li>
+                            <li><a href="#SOAP"> SOAP</a></li>
+                            <li><a href="#Request"> Request </a></li>
+                            <li><a href="#Response" >Response</a></li>
+                            <li><a href="#HTTPR" >HTTPR</a></li>
+                            <li><a href="#JPEG" >JPEG</a></li>
+                            <li><a href="#PNG">PNG</a></li>
+                        
+                          </ul>
+                    </li>
+                  </ul>
+                </nav>
+            <h1>HTML REVIEW</h1>
+            <div id = "skel">Skeletal Tags</div>
+            <p> Skeletal Tags are tags that make the the structure of the HTML file.
+                They are most important part because without them there would be no HTML Document.
+            </p>
+            <table class = "info">
+                <tr>
+                  <th>Tag Name</th>
+                  <th>Purpose</th>
+                  <th>Example</th>
+                </tr>
+                <tr>
+                  <td>&lt;html&gt;</td>
+                  <td>The html tag is what makes a HTML Document. It is the basis of the document itself.</td>
+                  <td>&lt;html&gt;<br>
+            
+                    &lt;/html&gt;
+
+                  </td>
+                </tr>
+                <tr>
+                  <td>&lt;head&gt;</td>
+                  <td>The head tag is a tag defining a specific area. The top of the page, it contains like links to CSS files and the title.</td>
+                  <td>&lt;html&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;title&gt;Hello World!&lt;title&gt;<br>
+                    &lt;/head&gt;
+                
+                    &lt;/html&gt;</td>
+                </tr>
+                <tr>
+                  <td>&lt;title&gt;</td>
+                  <td>The title tag is the name of the tab that you see at the top of the page. It gives the page a better name instead of the default which is just the name of the html file.</td>
+                  <td >Austria</td>
+                </tr>
+                <tr>
+                    <td>&lt;body&gt;</td>
+                    <td>The body tag is where all the content that you see on the actual website goes. This where you will find all your <a class= "plink" href ="#text">Text Tags</a> and others go. </td>
+                    <td>&lt;html&gt;<br>
+                      &lt;head&gt;<br>
+                      &lt;title&gt;Hello World!&lt;title&gt;<br>
+                      &lt;/head&gt;
+                      &lt;body&gt;
+                      &lt;h1&gt;Hello World!&&lt;/h1&gt;
+                      &lt;/body&gt;
+                  
+                      &lt;/html&gt;</td>
+                  </tr>
+              </table>
+            
+            <div id = "text">Text Tags</div>
+            <p>
+                
+            </p>
+            <table class = "info">
+                <tr>
+                  <th>Tag Name</th>
+                  <th>Purpose</th>
+                  <th>Example</th>
+                </tr>
+                <tr>
+                  <td>&lt;p&gt;</td>
+                  <td>The p tag stands for paragraph. It s a text tag that allows you write in paragraphs for your HTML document.</td>
+                  <td>&lt;p&gt;<br>
+                    This is a start of a really good paragraph.
+                    &lt;p&gt;
+
+                  </td>
+                </tr>
+                <tr>
+                  <td>&lt;h1&gt; through &lt;h6&gt;</td>
+                  <td>
+                      The Tags h1 through h6 are all headers. the headers are defined by importance 
+                      h1 being the most important and h6 being the least important. They are found in the body tag.
+                  </td>
+                  <td>&lt;html&gt;<br>
+                    &lt;h1&gt; This is a heading&lt;/h1&gt;<br>
+                    &lt;h2&gt; This is a heading &lt;/h2&gt;<br>
+                    &lt;h3&gt; This is a heading&lt;/h3&gt;<br>
+                    &lt;h4&gt; This is a heading&lt;/h4&gt;<br>
+                    &lt;h5&gt; This is a heading&lt;/h5&gt;<br>
+                    &lt;h6&gt; This is a heading&lt;/h6&gt;<br>
+                
+                    &lt;/html&gt;</td>
+                </tr>
+                <tr>
+                  <td>&lt;blockquote&gt;</td>
+                  <td>The blockquote tag is used to site information from other sources. They are ususally automatically indented by browswers.</td>
+                  <td ><blockquote cite="https://www.w3schools.com/tags/tag_blockquote.asp">&lt;blockquote cite ="https://www.w3schools.com/tags/tag_blockquote.asp"&gt; The &lt;blockquote&gt; tag specifies a section that is quoted from another source.&lt;/blockquote&gt;</blockquote></td>
+                </tr>
+                <tr>
+                    <td>&lt;address&gt;</td>
+                    <td>The address tag is used to define the contact inforamtion of the author/owner of the document. It is used either in a &lt;body&gt; tag or an &lt;article&gt; tag. Either way it represents the contact information for the document or the article.</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;pre&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+              </table>
+            <div id = "lists">Lists</div>
+            <p></p>
+            <table class = "info">
+                <tr>
+                  <th>Tag Name</th>
+                  <th>Purpose</th>
+                  <th>Example</th>
+                </tr>
+                <tr>
+                  <td>&lt;ol&gt;</td>
+                  <td>The html tag is what makes a HTML Document. It is the basis of the document itself.</td>
+                  <td>&lt;html&gt;<br>
+            
+                    &lt;/html&gt;
+
+                  </td>
+                </tr>
+                <tr>
+                  <td>&lt;ul&gt;</td>
+                  <td>The head tag is a tag defining a specific area. The top of the page, it contains like links to CSS files and the title.</td>
+                  <td>&lt;html&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;title&gt;Hello World!&lt;title&gt;<br>
+                    &lt;/head&gt;
+                
+                    &lt;/html&gt;</td>
+                </tr>
+                <tr>
+                  <td>&lt;li&gt;</td>
+                  <td>Roland Mendel</td>
+                  <td >Austria</td>
+                </tr>
+                <tr>
+                    <td>&lt;dl&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;dt&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;dd&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+              </table>
+            <div id = "struc">Structural Elements</div>
+            <p></p>
+            <table class = "info">
+                <tr>
+                  <th>Tag Name</th>
+                  <th>Purpose</th>
+                  <th>Example</th>
+                </tr>
+                <tr>
+                  <td>&lt;header&gt;</td>
+                  <td>The html tag is what makes a HTML Document. It is the basis of the document itself.</td>
+                  <td>&lt;html&gt;<br>
+            
+                    &lt;/html&gt;
+
+                  </td>
+                </tr>
+                <tr>
+                  <td>&lt;footer&gt;</td>
+                  <td>The head tag is a tag defining a specific area. The top of the page, it contains like links to CSS files and the title.</td>
+                  <td>&lt;html&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;title&gt;Hello World!&lt;title&gt;<br>
+                    &lt;/head&gt;
+                
+                    &lt;/html&gt;</td>
+                </tr>
+                <tr>
+                  <td>&lt;nav&gt;</td>
+                  <td>Roland Mendel</td>
+                  <td >Austria</td>
+                </tr>
+                <tr>
+                    <td>&lt;Section&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+              </table>
+            <div id = "links">Links and Media Tags</div>
+            <p></p>
+            <table class = "info">
+                <tr>
+                  <th>Tag Name</th>
+                  <th>Purpose</th>
+                  <th>Example</th>
+                </tr>
+                <tr>
+                  <td>&lt;a&gt;</td>
+                  <td>The html tag is what makes a HTML Document. It is the basis of the document itself.</td>
+                  <td>&lt;html&gt;<br>
+            
+                    &lt;/html&gt;
+
+                  </td>
+                </tr>
+                <tr>
+                  <td>&lt;link&gt;</td>
+                  <td>The head tag is a tag defining a specific area. The top of the page, it contains like links to CSS files and the title.</td>
+                  <td>&lt;html&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;title&gt;Hello World!&lt;title&gt;<br>
+                    &lt;/head&gt;
+                
+                    &lt;/html&gt;</td>
+                </tr>
+                <tr>
+                  <td>&lt;img&gt;</td>
+                  <td>Roland Mendel</td>
+                  <td >Austria</td>
+                </tr>
+                <tr>
+                    <td>&lt;figure&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;figcaption&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;video&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;audio&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;object&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;param&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;embed&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+              </table>
+            <div id = "table">Tables</div>
+            <p></p>
+            <table class = "info">
+                <tr>
+                  <th>Tag Name</th>
+                  <th>Purpose</th>
+                  <th>Example</th>
+                </tr>
+                <tr>
+                  <td>&lt;table&gt;</td>
+                  <td>The html tag is what makes a HTML Document. It is the basis of the document itself.</td>
+                  <td>&lt;html&gt;<br>
+            
+                    &lt;/html&gt;
+
+                  </td>
+                </tr>
+                <tr>
+                  <td>&lt;tr&gt;</td>
+                  <td>The head tag is a tag defining a specific area. The top of the page, it contains like links to CSS files and the title.</td>
+                  <td>&lt;html&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;title&gt;Hello World!&lt;title&gt;<br>
+                    &lt;/head&gt;
+                
+                    &lt;/html&gt;</td>
+                </tr>
+                <tr>
+                  <td>&lt;th&gt;</td>
+                  <td>Roland Mendel</td>
+                  <td >Austria</td>
+                </tr>
+                <tr>
+                    <td>&lt;td&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;caption&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;thead&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;tbody&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;colgroup&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;col&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;tfoot&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+              </table>
+            <div id = "other">Other Tags</div>
+            <p></p>
+            <table class = "info">
+                <tr>
+                  <th>Tag Name</th>
+                  <th>Purpose</th>
+                  <th>Example</th>
+                </tr>
+                <tr>
+                  <td>&lt;style&gt;</td>
+                  <td>The html tag is what makes a HTML Document. It is the basis of the document itself.</td>
+                  <td>&lt;html&gt;<br>
+            
+                    &lt;/html&gt;
+
+                  </td>
+                </tr>
+                <tr>
+                  <td>&lt;script&gt;</td>
+                  <td>The head tag is a tag defining a specific area. The top of the page, it contains like links to CSS files and the title.</td>
+                  <td>&lt;html&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;title&gt;Hello World!&lt;title&gt;<br>
+                    &lt;/head&gt;
+                
+                    &lt;/html&gt;</td>
+                </tr>
+                <tr>
+                  <td>&lt;canvas&gt;</td>
+                  <td>Roland Mendel</td>
+                  <td >Austria</td>
+                </tr>
+                <tr>
+                    <td>&lt;svg&gt;</td>
+                    <td>Roland Mendel</td>
+                    <td >Austria</td>
+                  </tr>
+            </table>
+
+            
+            <a name="des"></a> 
+            <div id = "des"> Descriptions</div>
+            
+            <p id="XML"><b>XML</b> (Extensible Markup Language) does not specifically and actively do anything but is a method of simplification. A few examples of the simplifications XML can achieve is data sharing, data transport, data availability and changing platform. XML can be available in many kinds of reading machines (news feeds, voice machines, etc) and will store the data in plain text format.</p>
+            <p id= "example-container">
+              &lt;note&gt;<br />
+              &nbsp;&nbsp;&nbsp;&lt;date&gt; 2015-09-01&lt;/date&gt;<br />
+              &nbsp;&nbsp;&nbsp;&lt;body&gt; Don't to Take out the trash!&lt;/body&gt;<br />
+              &lt;/note&gt;
+            </p>
+            <p id="DTD"> <b>DTD</b> (Document Type Definition) is the structure and legal elemts/attributes of an XML document. DTD can only be declared within a XML file and wrapped within the !DOCTYPE tag definition. </p>
+            <p id= "example-container"> 
+              &lt;!DOCTYPE note &#91;<br />
+              &lt;!ELEMENT note &#40;to,from,heading,body&#41;&gt;<br />
+              &lt;!ELEMENT to &#40;#PCDATA&#41;&gt;<br />
+              &#93;&gt;
+            </p>
+            <p id= "XSLT"><b> XSLT </b>(Extensible Markup Language Transformations) is a language created for the purpose of transforming XML documents into other XML documents.</p>
+            <p id= "example-container">
+              &lt;tr &gt;<br />
+              &lt;td &gt; &lt;xsl:value-of select="title"/ &gt;&lt;/td&gt;<br />
+              &lt;td &gt; &lt;xsl:value-of select="artist"/ &gt;&lt;/td&gt;<br />
+              &lt;/tr &gt;
+            </p>
+            <p id="HTML"><b>HTML</b>(HyperText Markup Language) is the most common standard markup language for Web pages. This allows any person to create their own websites with the most common tags “&lt; b&gt;, &lt; p&gt;, &lt;body&gt; &lt; i&gt;,etc”.</p>
+            <p id="example-container">
+              &lt;body&gt;<br />
+              &nbsp;&nbsp;&nbsp;&lt;h1&gt;This is a Heading&lt;/h1&gt;<br />
+              &nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph. &lt;/p&gt;<br />
+              &lt;/body&gt;<br />
+            </p>
+            <p id="CSS"><b>CSS</b>(Cascading Style Sheets) which is used for the descriptions and “style” for HTML files. The CSS influences the HTML elements display on the screen and have the capability to be stored in CSS files or HTML files as a &lt;style&gt; tag.</p>
+            <p id="example-container">
+              &lt;style&gt;<br />
+              p.center {<br />
+              &nbsp;text-align: center;<br />
+              &nbsp;color: red;<br />
+              }<br />
+              &lt;/style&gt;
+            </p>
+            <p id="WebF"><b>Web Forms</b>are pages that your users request using their browser and can be written using a combination of HTML, server code, client-script and server controls. Many IDE’s give permission for users to drag and drop server controls onto the platform of Web Form pages. </p>
+            <br />
+            <p id="JScript"><b>JavaScript</b>(JS) is one of many interpreted programming languages created for the purpose of software development. It conforms to the ECMAScript specifications and is classified as a high-leveled language with a compiler process instead of interpreter.</p>
+            <p id ="example-container">
+              &lt;script&gt;<br />
+              &nbsp;&nbsp;var x = 5;<br />
+                &lt;script&gt;               
+            </p>
+            <p id="DOM"><b>DOM</b>(Document Object Model) has the responsibility of connecting web pages to scripts or programming languages by representing a certain structure. The DOM usually takes the form of representing a document with “logical trees” with each branch ending in a node (object).</p>
+            <p id="example-container">
+              &lt;script type="text/javascript"&gt;<br />
+              &nbsp;&nbsp;var text = document.getElementById("one").innerHTML;<br />
+              &nbsp;&nbsp;alert("The first heading is " + text);<br />
+              &lt;/script&gt;<br /> 
+            </p>
+            <p id="DHTML"><b>DHTML</b>(Dynamic HyperText Markup Language) is a collection of multiple web-supporting technologies that create animated websites. There are many components that are factor ined into this static markup language: HTML, JavaScript, CSS, DOM,etc). </p>
+            <br />
+            <p id="PHP"><b>PHP</b>(Hypertext Preprocessor) is a general purposed scripting tool. This preprocessor is mainly used in aspects of web development and html embedding.</p>
+            <p id="example-container">
+              &lt;?php
+              &nbsp;&nbsp;echo "Hi, I'm a PHP script!";
+              ?&gt;
+            </p>
+            <p id="ASP"><b>ASP</b>(application service provider) is a business providing computer-based services to customers over a network; such as access to a particular software application (such as customer relationship management) using a standard protocol (HTTP).</p>
+            <br />
+            <p id="JSP"><b>JSP</b>(Java Server Pages) is technology that is able to provide a simplified way to create dynamic web content at a quick pass. And is responsible as a server-side technology for developing dynamic web pages. This is mainly used for implementing presentation layers of software development specifically HTML.</p>
+            <p id="example-container">
+              &lt;% num1 = num1+num2 %&gt;
+            </p>
+            <p id="NodeJS"><b>Node.JS</b>is an open-source, cross-platform, on the basis of a JavaScript runtime environment. It executes JavaScript code outside of a browser and correspond it with the works of the user.</p>
+            <p id="example-container">
+              var http = require('http');<br />
+              http.createServer(function (req, res) {<br />
+              res.writeHead(200, {'Content-Type': 'text/plain'});<br />
+              res.end('Hello World!');<br />
+              }).listen(8080);
+            </p>
+            <p id="Bootstrap"><b>Bootstrap</b>is an a custom-made open source toolkit for that is compatible with the formats of HTML, CSS, and JS. Any work can be responsive to the bootstrap grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
+            <p id="example-container">
+              &lt;p class=”text-warning”&gt;.text-warning&lt;/p&gt;
+            </p>
+            <p id="MySQL"><b>MySQL</b> is a featured RDBMS being used for developing various web-based software applications. MySQL is one of the best and has developed, marketed and supported by MySQL AB, which is a Swedish company. </p>
+            <p id="example-container">
+              hello&gt; mysql your-database-name
+            </p>
+            <p id="HTTP"><b>HTTP</b>(Hypertext Transfer Protocol) is a protocol structured by layer that is responsible for transmitting hypermedia documents, such as HTML. Hypertext Transfer Protocol Secure (HTTPS) is the first extension of the Hypertext Transfer Protocol (HTTP).and is used for secure communication over a network of a computer.</p>
+            <br />
+            <p id="UDP"><b>UDP</b>(User Datagram Protocol) is an alternative communications protocol to Transmission Control Protocol (TCP) used primarily for establishing low-latency and less tolerating connections between applications on the internet. However, UDP is highly unreliable and connectionless protocol.</p>
+            <br />
+            <p id="TCP"><b>TCP</b>TCP layer in that server will divide the message up into multiple packets, number them and then forward them to the IP layer for transport. </p>
+            <br />
+            <p id="URL"><b>URL</b>(Uniform Resource Locator) is a reference to the subset of URIs that provide a means of locating the resource by describing its primary access mechanism (e.g., its network “location”). </p>
+            <p id="example-container">
+              http://www.ietf.org/rfc/rfc2396.txt <br />
+              telnet://192.0.2.16:80/
+            </p>
+            <p id="URN"><b>URN</b>(Uniform Resource Name) and are confined to the human English language as protocol and location independency. URN’s require a special notation of “urn:” prior to a fragment identification in the beginning and are persistent in their presence.</p>
+            <p id="example-container">
+              urn:oasis:names:specification:docbook:dtd:xml:4.1.2
+            </p>
+            <p id="URI"><b>URI</b>The URI (Uniform Resource Identifier) play a part in identifying specific sources like a document or online book but does not give the type of location. URI’s begin with a scheme name which is a unique specification used when assigning identifiers. </p>
+            <p id="example-container">
+              Data:,Hello%20World
+            </p>
+            <p id="IP"><b>IP</b> (Internet Protocol) are designed for computers to send messages to other outside computers via a router network. However, IP’s have message storage, due to physical limitations of the internet's infrastructure.</p>
+            <br />
+            <p id="IPAddress"><b>IP Address</b>The IP address is a fascinating product of modern computer technology designed to allow one connected computer (or "smart" device) to communicate with another device over the Internet. IP addresses allow the location of all internet users to be pinpointed also differentiated from other devices.</p>
+            <p id="example-container">
+              2X5.1XX.164.XX
+            </p>
+            <p id="FQDN"><b>FQDN</b> or a Fully Qualified Domain Name is often called an absolute domain name because it provides absolute paths of the current host. </p>
+            <p id="example-container">
+              [host name].[domain].[tld]<br />
+              en.wikipedia.org
+            </p>
+            <p id="ARPANET"><b>ARPANET</b> (Advanced Research Projects Agency Network) as created to make it easier for all users to access computers and to have a more effective communication method for the military.</p>
+            <br />
+            <p id="WebS"><b>Web Server</b>A web server is never disconnected from internet and always has a unique address that comprises of a series of four numbers between 0 and 255 (IP Address) separated by a period. While using web servers, the hosting providers can manage multiple domains (users) on a single serve and has multiple versions of webservers.</p>
+            <p id="example-container">
+              LiteSpeed<br />
+              Node.js<br />
+              Lightpd
+            </p>
+            <p id="Port"><b>Port</b>is a endpoint for processes administering to communication? At the software level, a port is constructed logically to identify a specific process or a type of network service within a operating system of a computer.</p>
+            <br />
+            <p id="WebH"><b>Web-Hosting</b>Websites are hosted, or stored, on special computers called servers. ... If you do not have a domain, the hosting companies will help you purchase one.</p>
+            <br />
+            <p id="FTP"><b>FTP</b>is a endpoint for processes administering to communication? At the software level, a port is constructed logically to identify a specific process or a type of network service within a operating system of a computer.</p>
+            <p id="example-container">
+              ftp.outlook.com
+            </p>
+            <p id="SFTHP"><b>SFTHP</b>(SSH File Transfer Protocol) is a secure file transfer protocol and has a direct correlation with the SSH protocol. This protocol has a design that protects password breaches and middleman attacks with cryptographic hash functions.</p>
+            <br />
+            <p id="SSH"><b>SSH</b>SSH (Secure Shell) is a method that is responsible for securing remote log in between computers (using IP Address). It provides many alternate options for authentication within the security of computer communications with file transfer methods. </p>
+            <p id="example-container">
+              SSH first.name@XXX.XXX.XXX.XX
+            </p>
+            <p id="API"><b>API</b> specifies how software components should interact. Additionally, APIs are used when programming graphical user interface (GUI) components. A good API makes it easier to develop a program by providing all the building blocks.</p>
+            <br />
+            <p id="RESTAPI"><b>RESTful API</b>(Representational State Transfer) and is a two-way system of computers to communicate over HTTP. </p>
+            <br />
+          
+            <div class = "row row-col-1">
+              <div class="btn-group btn-group-toggle centerit col"  data-toggle="buttons">
+                  <label class="btn btn-dark" data-toggle="buttons">
+                      <input type="radio" class= "stymbol" name="options" id="option1" autocomplete="off" ><a href="#backtoTop"><svg class="bi bi-arrow-right" width="2em" height="1em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M12.146 6.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L14.793 10l-2.647-2.646a.5.5 0 010-.708z" clip-rule="evenodd"/>
+                          <path fill-rule="evenodd" d="M4 10a.5.5 0 01.5-.5H15a.5.5 0 010 1H4.5A.5.5 0 014 10z" clip-rule="evenodd"/></svg>Back to top</a>
+                  </label>
+              </div>
+          </div>
+          </body>
+
+
+
+
+
+
+
+
+
+
+    </html>
